@@ -75,21 +75,10 @@ const KontaktSection = () => {
     return (
         <>
             <Head>
-                <title>Kontakt | LWRO</title>
+                <title>Kontakt | Rodzina bez długu </title>
             </Head>
 
-            <Script
-                strategy="afterInteractive"
-                src="https://www.googletagmanager.com/gtag/js?id=AW-16570063009"
-            />
-            <Script id="gtag-init" strategy="afterInteractive">
-                {`
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments);}
-                    gtag('js', new Date());
-                    gtag('config', 'AW-16570063009');
-                `}
-            </Script>
+
 
             <main>
                 <NavDefault />
@@ -102,22 +91,16 @@ const KontaktSection = () => {
 
                         <div className="grid md:grid-cols-2 gap-8 ">
                             <div className="bg-white p-6 rounded-xl shadow space-y-4 content-center">
+
                                 <div className="flex items-start gap-4">
-                                    <MapPinIcon className="h-6 w-6 text-lwro-500" />
-                                    <p>Aleksandra Ostrowskiego 9/201, 53-238 Wrocław</p>
+                                    <PhoneIcon className="h-6 w-6 text-pinl-500" />
+                                    <p>+48 796 464 273</p>
                                 </div>
                                 <div className="flex items-start gap-4">
-                                    <PhoneIcon className="h-6 w-6 text-lwro-500" />
-                                    <p>+48 787 222 001</p>
+                                    <EnvelopeIcon className="h-6 w-6 text-pinl-500" />
+                                    <p>kontakt@twojeoddluzanie.pl</p>
                                 </div>
-                                <div className="flex items-start gap-4">
-                                    <EnvelopeIcon className="h-6 w-6 text-lwro-500" />
-                                    <p>kontakt@lwro.pl</p>
-                                </div>
-                                <div className="flex items-start gap-4">
-                                    <BuildingLibraryIcon className="h-6 w-6 text-lwro-500" />
-                                    <p>Numer Rachunku Bankowego: PL 55 1090 2415 0000 0001 5612 5537</p>
-                                </div>
+
                             </div>
 
                             <form
@@ -164,7 +147,7 @@ const KontaktSection = () => {
                                 <button
                                     type="submit"
                                     disabled={isSubmitting}
-                                    className="w-full bg-lwro-500 hover:bg-white hover:text-lwro-500 font-semibold py-2 px-4 rounded-md transition disabled:opacity-50"
+                                    className="w-full bg-pinl-500 hover:bg-white hover:text-pinl-500 font-semibold py-2 px-4 rounded-md transition disabled:opacity-50"
                                 >
                                     {isSubmitting ? 'Wysyłanie...' : 'Wyślij wiadomość'}
                                 </button>
@@ -177,17 +160,7 @@ const KontaktSection = () => {
                                 )}
                             </form>
                         </div>
-                        <div className="mt-16">
-                            <div className="h-96 w-full bg-gray-300 rounded-xl flex items-center justify-center text-gray-600">
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2505.748281137024!2d16.9793156769064!3d51.09658593922378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fc30a442e3991%3A0xe5a31a6104250266!2sAleksandra%20Ostrowskiego%209%2C%2053-238%20Wroc%C5%82aw!5e0!3m2!1spl!2spl!4v1727267156942!5m2!1spl!2spl"
-                                    className="h-96 w-full rounded-xl"
-                                    style={{ border: "0" }}
-                                    loading="lazy"
-                                    referrerPolicy="no-referrer-when-downgrade"
-                                ></iframe>
-                            </div>
-                        </div>
+
                     </div>
                 </section>
                 <Footer />

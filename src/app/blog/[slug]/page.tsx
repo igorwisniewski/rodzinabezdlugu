@@ -6,8 +6,9 @@ import { remark } from 'remark';
 import html from 'remark-html';
 import styles from './page.module.css';
 import Link from "next/link";
-import Navbar from "@/app/comps/navbar";
-import Footer from "@/app/comps/footer";
+import NavDefault from "@/comps/nav";
+import Footer from "@/comps/footer";
+
 
 const postsDirectory = path.join(process.cwd(), 'posts');
 
@@ -42,7 +43,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
 
     return (
         <div>
-            <Navbar/>
+            <NavDefault/>
             <main className={styles.articleContainer}>
 
             <Link href="/blog" className={styles.backLink}>

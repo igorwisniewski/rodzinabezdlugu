@@ -4,8 +4,9 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import Link from 'next/link';
-import Navbar from "@/app/comps/navbar";
-import Footer from "@/app/comps/footer";
+import NavDefault from "@/comps/nav";
+import Footer from "@/comps/footer";
+
 
 type Post = {
     slug: string;
@@ -54,7 +55,7 @@ export default async function BlogIndexPage() {
 
     return (
      <div>
-         <Navbar />
+         <NavDefault />
          <div style={{ maxWidth: '800px', margin: '0 auto', padding: '2rem' }} className="min-h-screen ">
 
             <h1 style={{ textAlign: 'center', marginBottom: '2rem' }} className="text-2xl">Nasz Blog o Finansach</h1>

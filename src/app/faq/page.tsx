@@ -8,64 +8,60 @@ import Link from "next/link";
 
 const faqItems = [
     {
-        "question": "Co jeśli nigdy nie siedziałam/em w samochodzie?",
-        "answer": "Niczym się nie przejmuj, większość osób przychodząca do nas na kurs nigdy nie prowadziła samochodu. Nauczymy się wszystkiego od podstaw w kontrolowanych warunkach."
+        "question": "Co jeśli nigdy nie miałem/am do czynienia z sądem i prawnikami?",
+        "answer": "Niczym się nie przejmuj, większość osób, które się do nas zgłaszają, jest w takiej sytuacji. Naszym zadaniem jest poprowadzenie Cię przez cały proces krok po kroku i wyjaśnienie wszystkiego w prosty sposób."
     },
     {
-        "question": "Co zrobić jeżeli nie mam czasu chodzić na wykłady teoretyczne?",
-        "answer": "W ofercie mamy także kursy online z teorii. Naukę możesz dopasować do swojego grafiku i bez przeszkód zdobywać wiedzę teoretyczną."
+        "question": "Co zrobić, jeżeli nie mam czasu na spotkania w kancelarii?",
+        "answer": "Wiele spraw możemy załatwić zdalnie – przez telefon, e-mail lub wideokonferencję. Dopasujemy formę kontaktu do Twojego grafiku, aby proces był jak najwygodniejszy."
     },
     {
-        "question": "Jak długo trwa kurs na prawo jazdy?",
-        "answer": "Wszystko zależy od waszej dyspozycyjności, średnio wszystko zajmuje około 2-3 miesiące."
+        "question": "Jak długo trwa cały proces upadłości konsumenckiej?",
+        "answer": "To zależy od obłożenia sądu i złożoności sprawy. Średnio od złożenia wniosku do ogłoszenia upadłości mija od 2 do 6 miesięcy. Całe postępowanie może potrwać dłużej."
     },
     {
-        "question": "Zależy mi na czasie, jaki kurs mam wybrać?",
-        "answer": "Kurs ekspresowy jest skierowany do osób, którym zależy na czasie i chcą przejść przez kurs prawa jazdy w jak najszybszym czasie. Wybierając go masz gwarancję kilku zajęć tygodniowo, co skutkuje znacznie szybszym ukończeniem kursu."
+        "question": "Moja sytuacja jest pilna, komornik zajął mi konto. Czy da się to przyspieszyć?",
+        "answer": "Złożenie wniosku o upadłość konsumencką powoduje zawieszenie postępowań egzekucyjnych. Działamy sprawnie, aby jak najszybciej przygotować i złożyć wniosek, co zapewni Ci prawną ochronę."
     },
     {
-        "question": "Czy można rozłożyć płatność na raty?",
-        "answer": "Jak najbardziej mamy taką opcję. Po więcej informacji prosimy o kontakt z biurem."
+        "question": "Czy można rozłożyć płatność za usługę na raty?",
+        "answer": "Oczywiście, rozumiemy sytuację naszych Klientów. Oferujemy możliwość płatności ratalnej. Szczegóły ustalamy indywidualnie podczas konsultacji."
     },
     {
-        "question": "Mam bardzo mało czasu w tygodniu. Czy to nie będzie problemem?",
-        "answer": "Nie ma się czym martwić. Jesteśmy dla was dostępni przez cały dzień plus weekendy. Godziny dopasujemy nawet do bardzo wąskiej dyspozycyjności."
+        "question": "Wstydzę się swojej sytuacji finansowej. Boję się oceny.",
+        "answer": "Nie masz się czego obawiać. Zapewniamy pełną dyskrecję i empatię. Naszym celem jest pomoc, a nie ocena. Upadłość to narzędzie, które daje szansę na nowy start."
     },
     {
-        "question": "Boję się, że nie poradzę sobie ze stresem.",
-        "answer": "Niczym się nie przejmuj. Nasi instruktorzy wiedzą jak temu zaradzić. Zajęcia odbywają się w przyjemnej atmosferze. Tok nauczania jest dobierany indywidualnie pod każdego kursanta."
+        "question": "Próbowałem/am sam/a złożyć wniosek, ale utknąłem/ęłam. Czy możecie pomóc?",
+        "answer": "Oczywiście. Pomożemy na każdym etapie – możemy przeanalizować Twoje dotychczasowe działania, poprawić wniosek lub przejąć prowadzenie całej sprawy."
     },
     {
-        "question": "Mam prawo jazdy, ale nie czuję się pewnie. Czy jest możliwość poćwiczenia pod okiem instruktora?",
-        "answer": "Jak najbardziej. W ofercie mamy również jazdy doszkalające."
+        "question": "Jak wygląda pierwsza, bezpłatna konsultacja?",
+        "answer": "Podczas pierwszej rozmowy analizujemy Twoją sytuację finansową, weryfikujemy, czy kwalifikujesz się do upadłości i przedstawiamy plan działania. To spotkanie jest niezobowiązujące."
     },
     {
-        "question": "Czy na pierwszych jazdach wyjeżdżamy w miasto?",
-        "answer": "Na pierwszych jazdach omawiamy technikę prowadzenia samochodu, wykonujemy proste manewry. Wszystko to odbywa się na prywatnym placu, na którym ruch jest znikomy."
+        "question": "Jakie dokumenty muszę przygotować na start?",
+        "answer": "Nie musisz się martwić o zbieranie dokumentów na pierwszą rozmowę. Wystarczy, że opowiesz nam o swojej sytuacji. Następnie przekażemy Ci dokładną listę potrzebnych pism."
     },
     {
-        "question": "W którym miejscu będą się zaczynać zajęcia praktyczne?",
-        "answer": "Zaczynamy na parkingu naszego biura przy ul. Ostrowskiego 9 we Wrocławiu."
+        "question": "Czy na usługę jest zawierana jakaś umowa?",
+        "answer": "Tak. Przed rozpoczęciem współpracy podpisujemy przejrzystą umowę, która określa zakres naszych usług, wynagrodzenie i wszystkie istotne warunki."
     },
     {
-        "question": "Czy na kurs jest zawierana jakaś umowa?",
-        "answer": "Tak. W naszym biurze podpisujemy umowę, w której są zawarte wszystkie ważne informacje. Oczywiście omówimy ją razem przed podpisaniem."
+        "question": "Czy są jakieś ukryte koszty oprócz waszego wynagrodzenia?",
+        "answer": "Nie. Nasze wynagrodzenie jest jasno określone w umowie. Jedyne dodatkowe koszty to opłaty sądowe wymagane przez prawo, o których wysokości z góry informujemy."
     },
     {
-        "question": "Czy egzamin wewnętrzny jest płatny?",
-        "answer": "Egzamin teoretyczny jest zawsze bezpłatny, natomiast w przypadku praktycznego egzaminu tylko pierwsze podejście jest darmowe."
+        "question": "Czy będę musiał/a osobiście stawiać się w sądzie?",
+        "answer": "W wielu przypadkach postępowanie odbywa się bez konieczności Twojej obecności w sądzie. Jeśli jednak rozprawa będzie konieczna, przygotujemy Cię do niej i będziemy Cię reprezentować."
     },
     {
-        "question": "Czy egzaminy wewnętrzne są obowiązkowe?",
-        "answer": "Tak, są obowiązkowe. Mają one za zadanie sprawdzić waszą gotowość do egzaminów państwowych."
+        "question": "Czy moje dane i informacje o długach są bezpieczne?",
+        "answer": "Absolutnie tak. Obowiązuje nas tajemnica zawodowa (radcowska/adwokacka). Gwarantujemy pełną poufność i bezpieczeństwo Twoich danych."
     },
     {
-        "question": "Czy pojazdy w szkole jazdy są bezpieczne?",
-        "answer": "Prowadzimy szkolenie na najnowszych pojazdach do nauki jazdy. Bezpieczeństwo to dla nas podstawa."
-    },
-    {
-        "question": "Czy muszę mieć swoje materiały do nauki?",
-        "answer": "Wszystko co potrzebne do nauki dostaniesz od nas. Nie musisz zatem dodatkowo nic kupować."
+        "question": "Czy muszę znać się na przepisach prawnych?",
+        "answer": "Nie, od tego jesteśmy my. Twoim zadaniem jest przedstawienie nam swojej sytuacji, a my zajmiemy się wszystkimi formalnościami i aspektami prawnymi."
     }
 ];
 export default function Faq(){
@@ -117,7 +113,7 @@ export default function Faq(){
                         <p className="text-sm text-gray-700 mb-4">Masz więcej pytań? Chętnie na nie odpowiemy!</p>
                         <div className="flex justify-center gap-4">
                             <Link
-                                href="tel:+48787222001"
+                                href="tel:+796464273"
                                 className="flex items-center gap-2 px-4 py-2 border rounded-md text-sm hover:bg-gray-100"
                             >
                                 <PhoneIcon className="h-5 w-5"/>
@@ -125,7 +121,7 @@ export default function Faq(){
                             </Link>
                             <Link
                                 href="/contact"
-                                className="flex items-center gap-2 px-4 py-2 bg-lwro-600 text-white rounded-md text-sm hover:bg-lwro-500">
+                                className="flex items-center gap-2 px-4 py-2 bg-pink-600 text-white rounded-md text-sm hover:bg-pink-500">
                                 Napisz do nas
                             </Link>
 
